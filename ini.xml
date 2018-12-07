@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!--    Configuration/initialization-file readable by veXml  -->
+
+<XperiML version="1.0">
+
+  <!--  initialization of the glWindow -->
+  <deviceWindow id="0">
+    <string id="winTitle"> ajanachara </string>
+
+    <bool id="fullScreen">    0 </bool>
+    <int  id="zBufferBits">  16 </int>
+
+    <int id="winSizeX">  600 </int>
+    <int id="winSizeY">  640 </int>
+    <floatArray id="bgColor"> 0.3 0.3 0.3 </floatArray>
+
+    <string id="flScheme"> plastic </string>
+    <int    id="textSize"> 12 </int>
+  </deviceWindow>
+
+  <!--  camera initialization  -->
+  <deviceGraphics id="0">
+    <camera id="0" pos="0 0 25 0 -90 0.0"/> <!-- start position -->
+    <float id="camRotSpeed">    180  </float>
+    <float id="camTranslSpeed">   5  </float>
+
+    <!-- 3d viewport initialization -->
+    <float id="nearClipping">   1    </float>
+    <float id="farClipping">  500    </float>
+    <float id="frustumLeft">   -0.5  </float>
+    <float id="frustumRight">   0.5  </float>
+    <float id="frustumBottom"> -0.5  </float>
+    <float id="frustumTop">     0.5  </float>
+    <float id="frustumScale">   1.0  </float>
+    <bool  id="backFaceCulling"> 1   </bool>
+  </deviceGraphics>
+
+  <!--  visibility graph analysis data  -->
+  <visibilityGraphAnalysis>
+    <float  id="heightOverGround">  1.6    </float>
+    <float  id="graphResolution">   0.6    </float>
+    <float  id="originX">           0.3    </float>
+    <float  id="originY">           0.3    </float>
+    <bool   id="ignoreTranspWalls"> true   </bool>
+
+    <float  id="periResolution">     2     </float>
+    <float  id="periAngleTolerance"> 0.2   </float>
+
+    <!-- settings for anavis, the command line analyzer -->
+    <!--
+    <string   id="graphFileName"> models/smaga/smaga01.vgr </string>
+    <intArray id="vertexCoords"> 14 11  16 24  25 3  26 16  36 27  38 3  41 14  4 25  4 3 </intArray>
+    <string   id="graphFileName"> models/smaga/smaga_rooms02.vgr </string>
+    <intArray id="vertexCoords"> 10 14  14 10  16 10  20 10  21 3  28 5  29 19  3 4  6 18 </intArray>
+    -->
+    <string   id="comment">   % </string>
+    <string   id="separator"> &#160; </string>
+  </visibilityGraphAnalysis>
+</XperiML>

@@ -1,0 +1,22 @@
+2006-07-30 v1.3.1, gf:
+  - profile data is now directed to output window
+  - output window starts minimized
+  - visibility graph is optionally rendered in color
+2006-07-28 v1.3.0, gf:
+  - partial isovist analysis methods added
+  - text output window added
+  - OBJ loader added
+  - upgrade of underlying libraries veLib, gl2ps, fltk
+2005-08-26 v1.2.8, gf:
+  - refactoring of vgrVertex -> graphNode class, making the class more generic and flexible.
+    These changes may finally lead to new minor version number...
+2005-08-24 v1.2.7, gf:
+  - first slightly unreliable algorithm to detect minima and maxima added.
+2005-05-05 v1.2.5, gf:
+  - under Windows, the system browser is used to display the online help
+2005-01-17 v1.2.4, gf:
+  - main window again resizable (issue due to change to fltk 1.1.6)
+  - bug occuring when displaying single revelation at an undefined (-1.0) position fixed
+  - free medium space isovist measurand added
+  - free near/medium space visibility graph visualizations added
+  - minimum wall distance visibility graph visualization added
